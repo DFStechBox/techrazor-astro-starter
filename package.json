@@ -1,0 +1,39 @@
+{
+  "name": "techrazor-astro-starter",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write . --plugin=prettier-plugin-astro",
+    "lint": "eslint .",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "@astrojs/vue": "^4.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.14",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^1.0.3",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "typescript": "^5.4.5"
+  }
+}

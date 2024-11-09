@@ -1,0 +1,14 @@
+---
+const {userName, isAdminUser} = Astro.props
+---
+
+ <p>Welcome {userName}</p>
+
+    {isAdminUser && (
+      <>
+      <section class="border-2 border-red-600 m-2 p-4">
+        <h3 class="font-bold">Admin control panel</h3>
+        <p class="text-secondary-200">Admin functionality goes here</p>
+        </section>
+      </>
+    )}

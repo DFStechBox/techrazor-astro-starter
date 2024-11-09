@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+const posts = await Astro.glob('./*.md')
+---
+
+<Layout pageTitle="Posts">
+  <h1 class="font-bold">Posts</h1>
+
+  <section>
+    <section>
+    {
+      posts.map((post) => (
+       <p>
+        <a class="text-blue-700 underline" href={post.url}>{post.frontmatter.title}</a>
+       </p>
+      ))
+    }
+  </section>
+
+</Layout>
